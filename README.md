@@ -23,5 +23,8 @@ number of files not in top 30 titles:  10064
 number of files not in top 40 titles:  9938**  
 
 ## 3) Analysis 3  
+Transforming sentences to vectors by using Bert algorithm and calculating cosine similarity between vectors is another possible approach. The reuslt of this possible solution indicates that similarity between transformed vectors are not considerable. Considering threshold of 40% similarity, even low value, results in 5519 articles disregarded.
+**result:  
+number of articles contains key and sim <40 :  5519**  
 
 3) Using sentenceTransform & indexing
