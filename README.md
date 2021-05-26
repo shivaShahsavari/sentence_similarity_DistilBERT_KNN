@@ -1,9 +1,10 @@
-# Kaggle_competition
+# automating discovery of how scientific data are referenced in publications
+## Coleridge Initiative (Kaggle competition)
 
-This challenge was proposed by ...
+[Coleridge Initiative](https://www.kaggle.com/c/coleridgeinitiative-show-us-the-data), an interesting challenge in which US government wants to address the many threats facing society, including; pandemics, climate change, Alzheimer’s disease, child hunger, increasing food production, maintaining biodiversity, and addressing many other cases. So, let's investigate whether natural language processing can find the hidden-in-plain-sight data citations!!  
 
-To get better insight within data, I had three EDAs. EDAs are really necessary to check which approaches can be proper for next steps: ([EDA.py](https://github.com/shivaShahsavari/Kaggle_competition/blob/main/EDA.py))  
 ## EDA  
+To get better insight within data, I had three EDAs. EDAs are really necessary to check which approaches can be proper for next steps: ([EDA.py](https://github.com/shivaShahsavari/Kaggle_competition/blob/main/EDA.py))  
 ### 1) Analysis 1  
 In first analysis, idea of topic classification using CNN with different kernels is explored. So, you can see in EDA file that min and max number of words in data sources name are 1 and 17. Unfortunately, Kernel lengths in range of 1-17 needs 62 GB RAM to run on training dataset.  
 **result:  
