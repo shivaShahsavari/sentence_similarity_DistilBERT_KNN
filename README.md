@@ -24,7 +24,7 @@ number of files not in top 30 titles:  10064
 number of files not in top 40 titles:  9938**  
 
 ### 3) Analysis 3  
-Transforming sentences to vectors by using Bert algorithm and calculating cosine similarity between vectors is another possible approach. The reuslt of this possible solution indicates that similarity between transformed vectors are not considerable. Considering threshold of 40% similarity, even low value, results in 5519 articles disregarded.  
+Transforming sentences to vectors by using BERT model (transforming model developed by Google) and calculating cosine similarity between vectors is another possible approach. The reuslt of this possible solution indicates that similarity between transformed vectors are not considerable. Considering threshold of 40% similarity, even low value, results in 5519 articles disregarded.  
 **result:  
 number of articles contains key and sim <40 :  5519**  
 
@@ -34,4 +34,4 @@ Note: FYI, you can save pickle format of 57000 records in 30 mins and in csv for
 
 ## Modeling  
 The simplest modeling is cosine similarity between sentences by their common words which calculates quickly without using RAM that much but accuracy is super low. ([sentence_similarity_words.py](https://github.com/shivaShahsavari/Kaggle_competition/blob/main/sentence_similarity_words.py))  
-The next modelling is transforming sentences by "quora-distilbert" pre_model (distilbert : a distilled version of BERT: smaller, faster, cheaper and lighter), indexing transformed data by "hnswlib" library and then finding KNN vectorsto the test sentences. This approach has highest accuracy. The predictions were correct in Kaggle competition but took exceeded RAM usage. ([vector_similarity_knn.py](https://github.com/shivaShahsavari/Kaggle_competition/blob/main/vector_similarity_knn.py))
+The next modelling is transforming sentences by "quora-distilbert" pre_training model (distilbert : a distilled version of BERT: smaller, faster, cheaper and lighter), indexing transformed data by "hnswlib" library and then finding KNN vectorsto the test sentences. This approach has highest accuracy. The predictions were correct in Kaggle competition but took exceeded RAM usage. ([vector_similarity_knn.py](https://github.com/shivaShahsavari/Kaggle_competition/blob/main/vector_similarity_knn.py))
